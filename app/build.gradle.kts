@@ -48,6 +48,14 @@ android {
 
 dependencies {
 
+    val compose_ui_version = "1.2.0"
+
+    implementation("androidx.navigation:navigation-compose:2.5.3")
+    implementation("androidx.compose.ui:ui:$compose_ui_version")
+    implementation("androidx.compose.material:material:$compose_ui_version")
+    implementation("androidx.compose.ui:ui-text:$compose_ui_version")
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
