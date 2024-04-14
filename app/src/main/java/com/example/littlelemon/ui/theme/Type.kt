@@ -5,6 +5,17 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.unit.em
+import com.example.littlelemon.R
+
+val MarkaziRegular = FontFamily(
+        Font(R.font.markazi_regular)
+)
+
+val KarlaRegular = FontFamily(
+        Font(R.font.karla_regular)
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(
@@ -31,4 +42,25 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
     */
+)
+
+val caption = TextStyle(
+        fontFamily = MarkaziRegular,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp
+)
+
+val button = TextStyle(
+        fontFamily = KarlaRegular,
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp,
+        letterSpacing = 0.1.em
+)
+
+val  h1 = TextStyle(
+        fontFamily = MarkaziRegular,
+        fontSize = 40.sp,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 0.1.em,
+        color = LittleLemonColor.charcoal
 )
